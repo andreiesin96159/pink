@@ -13,7 +13,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
             <a>
@@ -27,7 +27,7 @@
           </li>
           <li class="site-list__item site-list__item--active">
             <a href="form.html">
-              конкурс
+              Конкурс
             </a>
           </li>
           <li class="site-list__item">
@@ -37,137 +37,134 @@
           </li>
 
         </ul>
-        <div class="main-nav__list user-list">
 
-        </div>
-      </div>
     </nav>
   </header>
 
   <main class="page-main">
     <section class="stats">
-      <div class="stats__wrapper">
+
         <header class="stats__header">
-          <h1>Конкурс на самое
+          <h1 class="stats__title">Конкурс на самое
             безбашенное
             путешествие с Пинк</h1>
         </header>
-      </div>
+
     </section>
 
     <section class="benefits-form">
-      <div class="benefits-form__wrapper">
+
         <h2>Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!</h2>
 
         <form action="https://echo.htmlacademy.ru" method="post" class="benefits-form__form">
-          <fieldset class="benefits-form__block-1">
-            <div class="benefits-form__input-1">
-              <span>ФАМИЛИЯ:</span>
+          <fieldset class="benefits-form__fieldset-1">
+            <div class="benefits-form__input-1 input-form">
+              <span class="benefits-form__title">Фамилия:</span>
               <label for="surname"></label>
               <input type="text" class="benefits-form__input" name="surname" id="surname">
             </div>
-            <div class="benefits-form__input-2">
-              <span>ИМЯ:</span>
+            <div class="benefits-form__input-2 input-form">
+              <span class="benefits-form__title">Имя:</span>
               <label for="name"></label>
               <input type="text" class="benefits-form__input" name="name" id="name">
             </div>
-            <div class="benefits-form__input-3">
-              <span>ОТЧЕСТВО:</span>
+            <div class="benefits-form__input-3 input-form">
+              <span class="benefits-form__title">Отчество:</span>
               <label for="patronymic"></label>
               <input type="text" class="benefits-form__input" name="patronymic" id="patronymic">
             </div>
           </fieldset>
 
-          <fieldset class="benefits-form__block-2">
+          <fieldset class="benefits-form__fieldset-2">
             <legend>Ваши безбашенные достижения в путешествии</legend>
             <div class="benefits-form__checkbox-1">
               <label for="selfie"></label>
               <input type="checkbox" class="benefits-form__input" name="selfie" id="selfie">
-              <span>Сделал селфи с акулой</span>
+              <span class="benefits-form__description">Сделал селфи с акулой</span>
             </div>
             <div class="benefits-form__checkbox-2">
               <label for="beach"></label>
               <input type="checkbox" class="benefits-form__input" name="beach" id="beach">
-              <span>Обгорел на пляже</span>
+              <span class="benefits-form__description">Обгорел на пляже</span>
             </div>
             <div class="benefits-form__checkbox-3">
               <label for="noris"></label>
               <input type="checkbox" class="benefits-form__input" name="noris" id="noris">
-              <span>Видел Чака Норриса</span>
+              <span class="benefits-form__description">Видел Чака Норриса</span>
             </div>
             <div class="benefits-form__checkbox-4">
               <label for="suvenir"></label>
               <input type="checkbox" class="benefits-form__input" name="suvenir" id="suvenir">
-              <span>Накупил сувениров</span>
+              <span class="benefits-form__description">Накупил сувениров</span>
             </div>
             <div class="benefits-form__checkbox-5">
               <label for="tower"></label>
               <input type="checkbox" class="benefits-form__input" name="tower" id="tower">
-              <span>Удержал башню</span>
+              <span class="benefits-form__description">Удержал башню</span>
             </div>
             <div class="benefits-form__checkbox-6">
               <label for="hotel"></label>
               <input type="checkbox" class="benefits-form__input" name="hotel" id="hotel">
-              <span>Разгромил отель</span>
+              <span class="benefits-form__description">Разгромил отель</span>
             </div>
           </fieldset>
 
-          <fieldset class="benefits-form__block-3">
-            <legend>контактная информация</legend>
-            <div class="benefits-form__input-1">
-              <span>НОМЕР ТЕЛЕФОНА</span>
+          <fieldset class="benefits-form__fieldset-3">
+            <legend>Контактная информация</legend>
+            <div class="benefits-form__input-1 input-form">
+              <span class="benefits-form__title">Номер телефона</span>
               <label for="phone"></label>
               <input type="text" class="benefits-form__input" name="phone" id="phone">
             </div>
-            <div class="benefits-form__input-2">
-              <span>АДРЕС ПОЧТЫ</span>
+            <div class="benefits-form__input-2 input-form">
+              <span class="benefits-form__title">Адрес почты</span>
               <label for="email"></label>
               <input type="email" class="benefits-form__input" name="email" id="email">
             </div>
           </fieldset>
 
-          <fieldset class="benefits-form__block-4">
+          <fieldset class="benefits-form__fieldset-4">
             <legend>С каким приложением путешествовали?</legend>
             <div class="benefits-form__radio-1">
               <label for="ios"></label>
               <input type="radio" class="benefits-form__input" name="ios" id="ios">
-              <span>Pink для iOS</span>
+              <span class="benefits-form__description">Pink для iOS</span>
             </div>
             <div class="benefits-form__radio-2">
               <label for="android"></label>
               <input type="radio" class="benefits-form__input" name="android" id="android">
-              <span>Pink на Android</span>
+              <span class="benefits-form__description">Pink на Android</span>
             </div>
             <div class="benefits-form__radio-2">
               <label for="windows"></label>
               <input type="radio" class="benefits-form__input" name="windows" id="windows">
-              <span>Windows Phone</span>
+              <span class="benefits-form__description">Windows Phone</span>
             </div>
           </fieldset>
 
-          <fieldset class="benefits-form__block-5">
-            <legend>ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+          <fieldset class="benefits-form__fieldset-5">
+            <legend>Опишите свои эмоции</legend>
             <label for="comment"></label>
             <div class="benefits-form__textarea">
               <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
             </div>
           </fieldset>
 
-          <button type="submit" class="button-aplly"><span class="aplly-text">Отправить форму</span></button>
+          <button type="submit" class="button button-aplly">Отправить форму</button>
 
-          <p>* — обязательные поля</p>
+          <p class="benefits-form__obligatory">* — обязательные поля</p>
         </form>
-      </div>
+
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+
       <div class="page-footer__logo">
-        <img src="../source/img/img/glasses.png" alt="">
-        <img src="../source/img/img/pink.png" alt="">
+        <img src="../source/img/img/glasses.png" alt="glasses">
+        <img src="../source/img/img/pink.png" alt="pink">
       </div>
       <ul class="page-footer__list">
         <li class="page-footer__item">
@@ -187,10 +184,10 @@
         </li>
       </ul>
       <div class="page-footer__htmlacademy">
-        <p>Разработано</p>
+        <p class="page-footer__description">Разработано</p>
         <img src="../source/img/img/academy.png" alt="logo-htmlacademy">
       </div>
-    </div>
+
   </footer>
 
 </body>
