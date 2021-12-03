@@ -16,7 +16,7 @@
 
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -45,7 +45,7 @@
     <section class="stats">
 
         <header class="stats__header">
-          <h1 class="stats__title">Конкурс на самое
+          <h1 class="stats__title main-title">Конкурс на самое
             безбашенное
             путешествие с Пинк</h1>
         </header>
@@ -54,101 +54,101 @@
 
     <section class="benefits-form">
 
-        <h2>Поделитесь своей историей и получите
+        <h2 class="benefits-form__title form-title">Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="post" class="benefits-form__form">
-          <fieldset class="benefits-form__fieldset-1">
-            <div class="benefits-form__input-1 input-form">
-              <span class="benefits-form__title">Фамилия:</span>
-              <label for="surname"></label>
-              <input type="text" class="benefits-form__input" name="surname" id="surname">
+        <form action="https://echo.htmlacademy.ru" method="post" class="benefits-form__form form">
+          <fieldset class="form__fieldset fieldset-block-1">
+            <div class="form__element form-element">
+              <span class="form-element__title">Фамилия:</span>
+              <label for="surname" class="form-element__label"></label>
+              <input type="text" class="form-element__input" name="surname" id="surname">
             </div>
-            <div class="benefits-form__input-2 input-form">
-              <span class="benefits-form__title">Имя:</span>
-              <label for="name"></label>
-              <input type="text" class="benefits-form__input" name="name" id="name">
+            <div class="form__element  form-element">
+              <span class="form-element__title">Имя:</span>
+              <label for="name" class="form-element__label"></label>
+              <input type="text" class="form-element__input" name="name" id="name">
             </div>
-            <div class="benefits-form__input-3 input-form">
-              <span class="benefits-form__title">Отчество:</span>
-              <label for="patronymic"></label>
-              <input type="text" class="benefits-form__input" name="patronymic" id="patronymic">
-            </div>
-          </fieldset>
-
-          <fieldset class="benefits-form__fieldset-2">
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <div class="benefits-form__checkbox-1">
-              <label for="selfie"></label>
-              <input type="checkbox" class="benefits-form__input" name="selfie" id="selfie">
-              <span class="benefits-form__description">Сделал селфи с акулой</span>
-            </div>
-            <div class="benefits-form__checkbox-2">
-              <label for="beach"></label>
-              <input type="checkbox" class="benefits-form__input" name="beach" id="beach">
-              <span class="benefits-form__description">Обгорел на пляже</span>
-            </div>
-            <div class="benefits-form__checkbox-3">
-              <label for="noris"></label>
-              <input type="checkbox" class="benefits-form__input" name="noris" id="noris">
-              <span class="benefits-form__description">Видел Чака Норриса</span>
-            </div>
-            <div class="benefits-form__checkbox-4">
-              <label for="suvenir"></label>
-              <input type="checkbox" class="benefits-form__input" name="suvenir" id="suvenir">
-              <span class="benefits-form__description">Накупил сувениров</span>
-            </div>
-            <div class="benefits-form__checkbox-5">
-              <label for="tower"></label>
-              <input type="checkbox" class="benefits-form__input" name="tower" id="tower">
-              <span class="benefits-form__description">Удержал башню</span>
-            </div>
-            <div class="benefits-form__checkbox-6">
-              <label for="hotel"></label>
-              <input type="checkbox" class="benefits-form__input" name="hotel" id="hotel">
-              <span class="benefits-form__description">Разгромил отель</span>
+            <div class="form__element form-element">
+              <span class="form-element__title">Отчество:</span>
+              <label for="patronymic" class="form-element__label"></label>
+              <input type="text" class="form-element__input" name="patronymic" id="patronymic">
             </div>
           </fieldset>
 
-          <fieldset class="benefits-form__fieldset-3">
+          <fieldset class="form__fieldset fieldset-block-2">
+            <legend class="form__fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__element form-element form-element--checkbox">
+              <label for="selfie" class="form-element__label"></label>
+              <input type="checkbox" class="form-element__input" name="selfie" id="selfie">
+              <span class="form-element__description">Сделал селфи с акулой</span>
+            </div>
+            <div class="form__element form-element form-element--checkbox">
+              <label for="beach" class="form-element__label"></label>
+              <input type="checkbox" class="form-element__input" name="beach" id="beach">
+              <span class="form-element__description">Обгорел на пляже</span>
+            </div>
+            <div class="form__element form-element form-element--checkbox">
+              <label for="noris" class="form-element__label"></label>
+              <input type="checkbox" class="form-element__input" name="noris" id="noris">
+              <span class="form-element__description">Видел Чака Норриса</span>
+            </div>
+            <div class="form__element form-element form-element--checkbox">
+              <label for="suvenir" class="form-element__label"></label>
+              <input type="checkbox" class="form-element__input" name="suvenir" id="suvenir">
+              <span class="form-element__description">Накупил сувениров</span>
+            </div>
+            <div class="form__element form-element form-element--checkbox">
+              <label for="tower" class="form-element__label"></label>
+              <input type="checkbox" class="form-element__input" name="tower" id="tower">
+              <span class="form-element__description">Удержал башню</span>
+            </div>
+            <div class="form__element form-element form-element--checkbox">
+              <label for="hotel" class="form-element__label"></label>
+              <input type="checkbox" class="form-element__input" name="hotel" id="hotel">
+              <span class="form-element__description">Разгромил отель</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset fieldset-block-3">
             <legend>Контактная информация</legend>
-            <div class="benefits-form__input-1 input-form">
-              <span class="benefits-form__title">Номер телефона</span>
-              <label for="phone"></label>
-              <input type="text" class="benefits-form__input" name="phone" id="phone">
+            <div class="form__element form-element">
+              <span class="form-element__title">Номер телефона</span>
+              <label for="phone" class="form-element__label"></label>
+              <input type="text" class="form-element__input" name="phone" id="phone">
             </div>
-            <div class="benefits-form__input-2 input-form">
-              <span class="benefits-form__title">Адрес почты</span>
-              <label for="email"></label>
-              <input type="email" class="benefits-form__input" name="email" id="email">
-            </div>
-          </fieldset>
-
-          <fieldset class="benefits-form__fieldset-4">
-            <legend>С каким приложением путешествовали?</legend>
-            <div class="benefits-form__radio-1">
-              <label for="ios"></label>
-              <input type="radio" class="benefits-form__input" name="ios" id="ios">
-              <span class="benefits-form__description">Pink для iOS</span>
-            </div>
-            <div class="benefits-form__radio-2">
-              <label for="android"></label>
-              <input type="radio" class="benefits-form__input" name="android" id="android">
-              <span class="benefits-form__description">Pink на Android</span>
-            </div>
-            <div class="benefits-form__radio-2">
-              <label for="windows"></label>
-              <input type="radio" class="benefits-form__input" name="windows" id="windows">
-              <span class="benefits-form__description">Windows Phone</span>
+            <div class="form__element form-element">
+              <span class="form-element__title">Адрес почты</span>
+              <label for="email" class="form-element__label"></label>
+              <input type="email" class="form-element__input" name="email" id="email">
             </div>
           </fieldset>
 
-          <fieldset class="benefits-form__fieldset-5">
-            <legend>Опишите свои эмоции</legend>
+          <fieldset class="form__fieldset fieldset-block-4">
+            <legend class="fieldset-block-4__legend">С каким приложением путешествовали?</legend>
+            <div class="form__element form-element form-element--radio">
+              <label for="ios" class="form-element__label"></label>
+              <input type="radio" class="form-element__input" name="ios" id="ios">
+              <span class="form-element__description">Pink для iOS</span>
+            </div>
+            <div class="form__element form-element form-element--radio">
+              <label for="android" class="form-element__label"></label>
+              <input type="radio" class="form-element__input" name="android" id="android">
+              <span class="form-element__description">Pink на Android</span>
+            </div>
+            <div class="form__element form-element form-element--radio">
+              <label for="windows" class="form-element__label"></label>
+              <input type="radio" class="form-element__input" name="windows" id="windows">
+              <span class="form-element__description">Windows Phone</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset fieldset-block-5">
+            <legend class="fieldset-block-5__legend">Опишите свои эмоции</legend>
             <label for="comment"></label>
-            <div class="benefits-form__textarea">
-              <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <div class="form__element form-element">
+              <textarea name="comment" id="comment" cols="30" rows="10" class="form-element__textarea"></textarea>
             </div>
           </fieldset>
 
