@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>PINK</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="/source/img/svg/pink.svg" alt="logo-image" width="74" height="23">
+      <img src="../img/svg/pink.svg" alt="logo-image" width="74" height="23">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -21,7 +22,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a href="catalog.html">
               Фотографии
             </a>
           </li>
@@ -45,17 +46,19 @@
     <section class="stats">
       <div class="stats__wrapper">
         <header class="stats__header">
+          <div class="stats__background">
           <h1 class="stats__title">Взгляните на жизнь иначе!</h1>
+        </div>
           <button class="stats__button"><span>Скачать приложение</span></button>
           <ul class="stats__list">
             <li class="stats__item">
-              <img src="../source/img/img/apple-logo.png" alt="apple-logo">
+              <img src="../img/img/apple-logo.png" alt="apple-logo">
             </li>
             <li class="stats__item">
-              <img src="../source/img/img/android-logo.png" alt="android-logo">
+              <img src="../img/img/android-logo.png" alt="android-logo">
             </li>
             <li class="stats__item">
-              <img src="../source/img/img/microsoft-logo.png" alt="microsoft-logo">
+              <img src="../img/img/microsoft-logo.png" alt="microsoft-logo">
             </li>
           </ul>
           <p class="stats__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -69,7 +72,7 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
 
         <h3 class="advantages__title">Устали от серости мегаполиса?</h3>
-        <h3>Нам есть, что вам предложить!</h3>
+        <h3 class="advantages__title">Нам есть, что вам предложить!</h3>
       </div>
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -88,6 +91,7 @@
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
+
     </section>
 
     <section class="reviews">
@@ -120,9 +124,9 @@
 
       <table class="price__table">
         <tr class="price__list">
-          <th class="price__title">База <br> 1,99 USD</th>
-          <th class="price__title">Стандарт <br> 3,99 USD</th>
-          <th class="price__title">Анлим<br>  9,99 USD</th>
+          <th class="price__title">База <br> <span class="price__number">1,99 USD</span></th>
+          <th class="price__title">Стандарт <br> <span class="price__number">3,99 USD</span></th>
+          <th class="price__title">Анлим<br> <span class="price__number">9,99 USD</span> </th>
         </tr>
         <tr class="price__name">
           <td class="price__description">Розовый фильтр</td>
@@ -159,7 +163,7 @@
             <a href="#" class="question__link">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <img src="" alt="map" class="question__img">
+        <img src="../img/img/map.png" alt="map" class="question__img">
       </div>
     </section>
 
@@ -169,29 +173,29 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="../source/img/img/glasses.png" alt="" class="page-footer__img">
-        <img src="../source/img/img/pink.png" alt="" class="page-footer__img">
+        <img src="../img/img/glasses.png" alt="glasses" class="page-footer__img">
+        <img src="../img/img/pink.png" alt="pink" class="page-footer__img">
       </div>
       <ul class="page-footer__list">
         <li class="page-footer__item">
-          <a href="#" class="page-footer__twitter">
-            <img src="../source/img/img/twitter.png" alt="twitter" class="page-footer__twitter">
+          <a href="#" class="page-footer__twitter footer-icon">
+            <img src="../img/img/twitter.png" alt="twitter" class="page-footer__twitter">
           </a>
         </li>
         <li class="page-footer__item">
-          <a href="#" class="page-footer__facebook">
-            <img src="../source/img/img/facebook.png" alt="facebook" class="page-footer__facebook">
+          <a href="#" class="page-footer__facebook footer-icon facebook">
+            <img src="../img/img/facebook.png" alt="facebook" class="page-footer__facebook">
           </a>
         </li>
         <li class="page-footer__item">
-          <a href="#" class="page-footer__youtube">
-            <img src="../source/img/img/youtube.png" alt="youtube" class="page-footer__youtube">
+          <a href="#" class="page-footer__youtube footer-icon youtube">
+            <img src="../img/img/youtube.png" alt="youtube" class="page-footer__youtube">
           </a>
         </li>
       </ul>
       <div class="page-footer__htmlacademy">
         <p class="page-footer__description">Разработано</p>
-        <img src="../source/img/img/academy.png" alt="logo-htmlacademy" class="page-footer__htmlacademy">
+        <img src="../img/img/academy.png" alt="logo-htmlacademy" class="page-footer__htmlacademy">
       </div>
     </div>
   </footer>
