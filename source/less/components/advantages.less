@@ -1,3 +1,4 @@
+@import "./variables.less";
 
 @font-face {
   font-family: "Open Sans";
@@ -6,6 +7,7 @@
   src: url("/source/fonts/opensans.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Open Sans";
   font-style: bold;
@@ -13,19 +15,17 @@
   src: url("/source/fonts/opensansbold.woff2") format("woff2");
   font-display: swap;
 }
-@import "./variables.less";
-.advantages
-{
-padding-left: 20px;
+
+.advantages {
+  padding-left: 20px;
 }
 
-.advantages__description
-{
+.advantages__description {
   font-size: 14px;
   line-height: 24px;
   color: @text-color;
 }
-.advantages__list
-{
-  background: url('../img/img/grey-background.png') no-repeat;
+
+.advantages__list {
+  background: url("../img/img/grey-background.png") no-repeat;
 }
