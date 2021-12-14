@@ -4,39 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="/source/img/svg/pink.svg" alt="logo-image" width="74" height="23">
+      <img src="../img/svg/pink.svg" alt="logo-image" width="74" height="23">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              html academy
-            </a>
-          </li>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html" class="site-list__link">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">
+            Конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">
+            html academy
+          </a>
+        </li>
 
-        </ul>
+      </ul>
 
     </nav>
   </header>
@@ -44,135 +45,137 @@
   <main class="page-main">
     <section class="stats">
 
-        <header class="stats__header">
-          <h1>Фотографии
+      <header class="stats__header">
+        <div class="stats__background">
+          <h1 class="stats__title">Фотографии
             пользователей</h1>
-        </header>
+        </div>
+      </header>
 
     </section>
 
     <section class="photo">
 
-        <h2 class="photo__title">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?</h2>
+      <h2 class="photo__title">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</h2>
 
-        <ul class="photo__list">
-          <li class="photo__item photo-post photo-post--best">
-            <img src="" alt="bridge" class="photo__img photo-post__img">
-            <p class="photo-post__description">Анна (5 минут назад)</p>
-            <p class="photo-post__description">Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 215</p>
-            </div>
-          </li>
-          <li class="photo__item photo-post">
-            <img src="" alt="car" lass="photo__img">
-            <p class="photo-post__description">Левон (5 часов назад)</p>
-            <p class="photo-post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 356</p>
-            </div>
-          </li>
-          <li class="photo__item photo-post">
-            <img src="" alt="music" lass="photo__img">
-            <p class="photo-post__description">Антон (12 часов назад)</p>
-            <p class="photo-post__description">Соседи будут рады!</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 666</p>
-            </div>
-          </li>
-          <li class="photo__item photo-post">
-            <img src="" alt="glasses" lass="photo__img">
-            <p class="photo-post__description">Борис (20 часов назад)</p>
-            <p class="photo-post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 215</p>
-            </div>
-          </li>
-          <li class="photo__item photo-post">
-            <img src="" alt="bahcha" lass="photo__img">
-            <p class="photo-post__description">Сергей (25 часов назад)</p>
-            <p class="photo-post__description">Самая кубанская в мире!</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 4</p>
-            </div>
-          </li>
-          <li class="photo__item photo-post">
-            <img src="" alt="leg" lass="photo__img">
-            <p class="photo-post__description">Максим (40 часов назад)</p>
-            <p class="photo-post__description">Где снег-то?</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 150</p>
-            </div>
-          </li>
-          <li class="photo__item photo-post">
-            <img src="" alt="flight" lass="photo__img">
-            <p class="photo-post__description">Надежда (45 часов назад)</p>
-            <p class="photo-post__description">Всем GM и взаимные лайки!</p>
-            <div class="photo-post__like like"><img src="/" alt="like">
-              <p class="like__description">Нравится: 2560</p>
-            </div>
-          </li>
-        </ul>
-        <p class="photo__description">Затмите их всех!
-          Выкладывайте все, что накопилось в телефоне!</p>
+      <ul class="photo__list">
+        <li class="photo__item photo-post photo-post--best">
+          <img src="../img/img/panorama-tablet.png" alt="bridge" class="photo__img photo-post__img">
+          <p class="photo-post__name">Анна <span class="photo-post__time">(5 минут назад)</span></p>
+          <p class="photo-post__description">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 215</p>
+          </div>
+        </li>
+        <li class="photo__item photo-post">
+          <img src="../img/img/photo-1-mobile.png" alt="car" lass="photo__img">
+          <p class="photo-post__name">Левон <span class="photo-post__time">(5 часов назад)</span></p>
+          <p class="photo-post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 356</p>
+          </div>
+        </li>
+        <li class="photo__item photo-post">
+          <img src="../img/img/photo-2-mobile.png" alt="music" lass="photo__img">
+          <p class="photo-post__name">Антон <span class="photo-post__time">(12 часов назад)</span></p>
+          <p class="photo-post__description">Соседи будут рады!</p>
+          <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 666</p>
+          </div>
+        </li>
+        <li class="photo__item photo-post">
+          <img src="../img/img/photo-3-tablet.png" alt="glasses" lass="photo__img">
+          <p class="photo-post__name">Борис <span class="photo-post__time">(20 часов назад)</span></p>
+          <p class="photo-post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 215</p>
+          </div>
+        </li>
+        <li class="photo__item photo-post">
+          <img src="../img/img/photo-4-tablet.png" alt="bahcha" lass="photo__img">
+          <p class="photo-post__name">Сергей <span class="photo-post__time">(25 часов назад)</span></p>
+          <p class="photo-post__description">Самая кубанская в мире!</p>
+          <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 4</p>
+          </div>
+        </li>
+        <li class="photo__item photo-post">
+          <img src="../img/img/photo-5-tablet.png" alt="leg" lass="photo__img">
+          <p class="photo-post__name">Максим <span class="photo-post__time">(40 часов назад)</span></p>
+          <p class="photo-post__description">Где снег-то?</p>
+          <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 150</p>
+          </div>
+        </li>
+        <li class="photo__item photo-post">
+          <img src="../img/img/photo-6-tablet.png" alt="flight" lass="photo__img">
+          <p class="photo-post__name">Надежда <span class="photo-post__time">(45 часов назад)</span></p>
+          <p class="photo-post__description">Всем GM и взаимные лайки!</p>
+          <div class="photo-post__like like">
+            <img src="../img/svg/heart.svg" alt="like">
+            <p class="like__description">Нравится: 2560</p>
+          </div>
+        </li>
+      </ul>
+      <p class="photo__description">Затмите их всех!
+        Выкладывайте все, что накопилось в телефоне!</p>
 
     </section>
 
     <section class="filter">
 
-        <img src="" alt="winter road">
+      <img src="../img/img/photo-7-tablet.png" alt="winter road">
 
-        <div class="filter__block">
-          <img src="" alt="crop">
-          <div class="filter__line">
-            <button class="filter__button">
-              <span class="visually-hidden">Кнопка фильтра</span>
-            </button>
-          </div>
-          <img src="" alt="fill">
-          <img src="" alt="contrast">
+      <div class="filter__block">
+        <img src="../img/svg/crop.svg" alt="crop">
+        <div class="filter__line">
+          <button class="filter__button">
+            <span class="visually-hidden">Кнопка фильтра</span>
+          </button>
         </div>
-
-        <button class="filter__post">Запостить</button>
-        <button class="filter__cancel">Отмена</button>
-
-
+        <img src="../img/svg/fill.svg" alt="fill">
+        <img src="../img/svg/contrast.svg" alt="contrast">
+      </div>
+      <div class="filter__position-button">
+        <button class="filter__post button-filter">Запостить</button>
+        <button class="filter__cancel button-filter button-filter--gray">Отмена</button>
+      </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
-
+    <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="../source/img/img/glasses.png" alt="">
-        <img src="../source/img/img/pink.png" alt="">
+        <img src="../img/img/glasses.png" alt="glasses" class="page-footer__img">
+        <img src="../img/img/pink.png" alt="pink" class="page-footer__img">
       </div>
       <ul class="page-footer__list">
         <li class="page-footer__item">
-          <a href="#" class="page-footer__twitter">
-            <img src="../source/img/img/twitter.png" alt="twitter">
+          <a href="#" class="page-footer__twitter footer-icon">
+            <img src="../img/img/twitter.png" alt="twitter" class="page-footer__twitter">
           </a>
         </li>
         <li class="page-footer__item">
-          <a href="#" class="page-footer__facebook">
-            <img src="../source/img/img/facebook.png" alt="facebook">
+          <a href="#" class="page-footer__facebook footer-icon facebook">
+            <img src="../img/img/facebook.png" alt="facebook" class="page-footer__facebook">
           </a>
         </li>
         <li class="page-footer__item">
-          <a href="#" class="page-footer__youtube">
-            <img src="../source/img/img/youtube.png" alt="youtube">
+          <a href="#" class="page-footer__youtube footer-icon youtube">
+            <img src="../img/img/youtube.png" alt="youtube" class="page-footer__youtube">
           </a>
         </li>
       </ul>
       <div class="page-footer__htmlacademy">
-        <p>Разработано</p>
-        <img src="../source/img/img/academy.png" alt="logo-htmlacademy">
+        <p class="page-footer__description">Разработано</p>
+        <img src="../img/img/academy.png" alt="logo-htmlacademy" class="page-footer__htmlacademy">
       </div>
-
+    </div>
   </footer>
 
 </body>
