@@ -29,9 +29,10 @@
   @media (min-width: @tablet-width) {
     .question__list {
       display: grid;
-      grid-template-columns: repeat(3, 182px);
+      grid-template-columns: repeat(3, 300px);
       grid-template-rows: auto;
       justify-content: space-evenly;
+      width: 100%;
     }
 
     .question__item--second {
@@ -43,38 +44,10 @@
     }
   }
 
-  .question__list {
-    padding: 0;
-  }
-
   @media (min-width: @desktop-width) {
     .question__list {
       display: flex;
       justify-content: space-evenly;
     }
-  }
-}
-
-.question__img {
-  width: 100%;
-}
-
-.question__wrapper {
-  @media (min-width: @mobile-width) {
-    width: 240px;
-    padding: 46px 40px 0 40px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 546px;
-    padding: 46px 67px 0 67px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 861px;
-    padding: 30px 160px 0 160px;
-    margin: 0 auto;
   }
 }

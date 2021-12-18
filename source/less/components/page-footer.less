@@ -16,23 +16,20 @@
   .page-footer__wrapper {
     @media (min-width: @mobile-width) {
       text-align: center;
-      width: 174px;
-      padding: 39px 74px;
-      margin: 0 auto;
+
+      .page-footer__list {
+        justify-content: space-evenly;
+      }
+
+      .page-footer__htmlacademy {
+        justify-content: center;
+      }
     }
 
     @media (min-width: @tablet-width) {
       display: flex;
       justify-content: space-between;
-      width: 620px;
-      padding: 37px 20px;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: flex;
-      justify-content: space-between;
-      width: 939px;
-      padding: 82px 130px;
+      padding-left: 120px;
     }
   }
 }
