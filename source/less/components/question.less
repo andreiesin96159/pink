@@ -1,9 +1,5 @@
 @import "./variables.less";
 
-.question {
-  padding-left: 20px;
-}
-
 .question__title {
   font-weight: 300;
   font-size: 24px;
@@ -23,4 +19,35 @@
   line-height: 33px;
   color: @red-color;
   text-decoration: none;
+}
+
+.question {
+  @media (min-width: @mobile-width) {
+    text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    .question__list {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: auto;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    .question__item--second {
+      grid-column-start: 3;
+    }
+
+    .question__item--third {
+      grid-column-start: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .question__list {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 }

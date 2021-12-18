@@ -20,16 +20,31 @@
   margin: 0;
 }
 
-.stats__header {
-  padding-left: 20px;
-}
-
 .stats__background {
   background: url("../img/img/back-mobile.png") no-repeat;
   height: 462px;
+  background-size: 100%;
 }
 
 .stats__description {
   font-size: 14px;
   line-height: 24px;
+}
+
+.stats__block {
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    .stats__list {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .stats__list {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
 }

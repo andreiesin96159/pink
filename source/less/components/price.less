@@ -2,7 +2,25 @@
 
 .price {
   background: url("../img/img/grey-background.png") no-repeat;
-  padding-left: 20px;
+  background-size: 100%;
+
+  @media (max-width: @tablet-width) {
+    text-align: center;
+
+    .price__table {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .price__toggles {
+      display: none;
+    }
+
+    .price__table {
+      margin: 0 auto;
+    }
+  }
 }
 
 .price__list {
