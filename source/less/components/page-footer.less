@@ -13,5 +13,27 @@
 }
 
 .page-footer {
-  padding-left: 20px;
+  .page-footer__wrapper {
+    @media (min-width: @mobile-width) {
+      text-align: center;
+
+      .page-footer__list {
+        justify-content: space-evenly;
+      }
+
+      .page-footer__htmlacademy {
+        justify-content: center;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 120px;
+    }
+  }
+}
+
+.page-footer__list {
+  display: flex;
 }

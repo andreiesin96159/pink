@@ -1,4 +1,19 @@
 .page-header {
   background: #000000;
+  background-size: 100%;
   padding-left: 20px;
+}
+
+.page-header__logo {
+  .page__logo--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  .page__logo--desktop {
+    @media (max-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
