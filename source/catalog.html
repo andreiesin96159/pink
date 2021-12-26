@@ -10,55 +10,59 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="../img/svg/pink.svg" alt="logo-image" width="74" height="23">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html" class="site-list__link">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">
-            Фотографии
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html" class="site-list__link">
-            Конкурс
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">
-            html academy
-          </a>
-        </li>
-
-      </ul>
-
-    </nav>
+    <div class="container">
+      <a class="page-header__logo">
+        <img src="../img/svg/pink.svg" alt="logo-image" class="page__logo page__logo--mobile">
+        <img src="../img/svg/logotype-white-tablet.svg" alt="logo-image" class="page__logo page__logo--desktop">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html" class="site-list__link">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html" class="site-list__link">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html" class="site-list__link">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
     <section class="stats">
 
-      <header class="stats__header">
+      <header class="stats__header container">
         <div class="stats__background">
-          <h1 class="stats__title">Фотографии
+          <h1 class="stats__title">Фотографии<br>
             пользователей</h1>
         </div>
       </header>
 
     </section>
 
-    <section class="photo">
+    <section class="photo container">
 
-      <h2 class="photo__title">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</h2>
+      <h2 class="photo__title">Взгляните на фотографии, которые выкладывают <br class="photo__title photo__title--none">
+        пользователи!
+        <br class="photo__title see-title"> Видите, как не хватает ваших?
+      </h2>
 
       <ul class="photo__list">
         <li class="photo__item photo-post photo-post--best">
@@ -122,14 +126,14 @@
           </div>
         </li>
       </ul>
-      <p class="photo__description">Затмите их всех!
+      <p class="photo__description">Затмите их всех! <br class="photo__description photo__description--none">
         Выкладывайте все, что накопилось в телефоне!</p>
 
     </section>
 
-    <section class="filter">
+    <section class="filter container">
 
-      <img src="../img/img/photo-7-tablet.png" alt="winter road">
+      <img src="../img/img/photo-7-tablet.png" alt="winter road" class="filter__img">
 
       <div class="filter__block">
         <img src="../img/svg/crop.svg" alt="crop">
@@ -150,10 +154,10 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <div class="page-footer__logo">
         <img src="../img/img/glasses.png" alt="glasses" class="page-footer__img">
-        <img src="../img/img/pink.png" alt="pink" class="page-footer__img">
+        <img src="../img/svg/pinkFooter.svg" alt="pink" class="page-footer__img">
       </div>
       <ul class="page-footer__list">
         <li class="page-footer__item">
