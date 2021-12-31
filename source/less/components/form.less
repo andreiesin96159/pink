@@ -1,7 +1,14 @@
 @import "./variables.less";
 
 .form__fieldset {
-  border: none;
+  @media (min-width: @mobile-width) {
+    border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @white-color;
+    border-radius: 1px;
+  }
 }
 
 .button-aplly {
@@ -24,5 +31,40 @@
 
   .benefits-form__star {
     color: @red-color;
+  }
+}
+
+.form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__div {
+  margin-top: 50px;
+  text-align: center;
+
+  .benefits-form__for-fill {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 40px;
+  }
+
+  .benefits-form__obligatory {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    .benefits-form__for-fill {
+      display: inline;
+    }
   }
 }

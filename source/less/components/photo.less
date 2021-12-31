@@ -2,23 +2,38 @@
 
 .photo__title {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 30px;
   color: @text-color;
-}
+  text-align: center;
 
-.photo-post__description {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: @text-color;
-}
+  .photo__title--none {
+    display: none;
+  }
 
-.photo-post__name {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: @text-color;
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    .photo__title--none {
+      display: inline;
+    }
+
+    .see-title {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .photo__title--none {
+      display: none;
+    }
+
+    .see-title {
+      display: block;
+    }
+  }
 }
 
 .photo-post__time {
@@ -28,6 +43,42 @@
   color: @text-color;
 }
 
+.photo__list {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+
+    .photo-post--best {
+      grid-column: 1/3;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
+
+    .photo-post--best {
+      grid-column: 1/4;
+    }
+  }
+}
+
+.photo__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: @text-color;
+  text-align: center;
+}
+
+.photo {
+  padding-left: 20px;
+}
+
 .like__description {
   font-weight: normal;
   font-size: 12px;
@@ -35,22 +86,55 @@
   color: @red-color;
 }
 
+.photo-post__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-color;
+  padding-left: 20px;
+}
+
+.photo-post__like {
+  display: flex;
+  padding-left: 20px;
+
+  .like__description {
+    padding-left: 20px;
+  }
+}
+
+.photo-post__name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-color;
+  padding-left: 20px;
+}
+
 .photo__item {
+  width: 100%;
   background: #f2f2f2;
   margin-bottom: 20px;
-}
 
-.photo__list {
-  padding: 0;
-}
+  @media (min-width: @tablet-width) {
+    .photo-post__name {
+      padding-left: 30px;
+    }
 
-.photo__description {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: @text-color;
-}
+    .photo-post__description {
+      padding-left: 30px;
+    }
 
-.photo {
-  padding-left: 20px;
+    .photo-post__like {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 30px;
+
+      .like__description {
+        padding-left: 20px;
+        order: -1;
+      }
+    }
+  }
 }

@@ -25,3 +25,141 @@
   line-height: 18px;
   color: @red-color;
 }
+
+
+.fieldset-block-1 {
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+
+    .form__element {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.fieldset-block-2 {
+  .form__element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .form__fieldset-legend {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @mobile-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+
+    .form-element--checkbox {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.fieldset-block-3 {
+  margin-top: 40px;
+
+  @media (min-width: @mobile-width) {
+    .form__element {
+      margin-bottom: 25px;
+    }
+
+    .form__legend {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .form__legend {
+      display: block;
+      text-align: center;
+      color: @red-color;
+    }
+
+    .form-element__input {
+      width: 90%;
+      order: -1;
+    }
+
+    .form__element {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+
+    .form__element {
+      margin-left: 60px;
+    }
+
+    .form-element__input {
+      width: 371px;
+    }
+  }
+}
+
+.fieldset-block-4 {
+  margin-top: 40px;
+
+  .fieldset-block-4__legend {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .form__element {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @mobile-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+}
+
+.fieldset-block-5 {
+  margin-top: 45px;
+  text-align: center;
+
+  .fieldset-block-5__legend {
+    margin-bottom: 15px;
+  }
+}
