@@ -1,11 +1,46 @@
 .site-list__link {
   color: #ffffff;
   text-decoration: none;
-  font-weight: normal;
   font-size: 18px;
   line-height: 18px;
 }
 
-.site-list {
-  margin: 0;
+
+@media (min-width: @mobile-width) {
+  .site-list {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 0;
+
+    a {
+      position: relative;
+      display: block;
+      padding: 12px 21px;
+      padding-bottom: 13px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-top: 2px solid #1d2630;
+      border-bottom: 2px solid #3f3f3f;
+      text-align: center;
+      font-weight: bold;
+
+      @media (min-width: @desktop-width) {
+        border: none;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 780px;
+  }
 }
