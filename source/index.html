@@ -9,13 +9,16 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="../img/svg/pink.svg" alt="logo-image" class="page__logo page__logo--mobile">
-      <img src="../img/svg/logotype-white-tablet.svg" alt="logo-image" class="page__logo page__logo--desktop">
-    </a>
+  <header class="page-header page-header--closed">
+    <div class="page-header__block">
+      <a class="page-header__logo">
+        <img src="../img/svg/pink.svg" alt="logo-image" class="page__logo page__logo--mobile">
+        <img src="../img/svg/logotype-white-tablet.svg" alt="logo-image" class="page__logo page__logo--desktop">
+      </a>
+      <button class="page-header__toggle page-header__toggle--closed toggle" type="button"><span
+          class="toggle__span"></span></button>
+    </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -215,7 +218,8 @@
 
   <script>
     var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
+    var navToggle = document.querySelector('.page-header__toggle');
+    var navHeader = document.querySelector('.page-header');
 
     navMain.classList.remove('main-nav--nojs');
 
@@ -226,6 +230,20 @@
       } else {
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
+      }
+      if (navToggle.classList.contains('page-header__toggle--closed')) {
+        navToggle.classList.remove('page-header__toggle--closed');
+        navToggle.classList.add('page-header__toggle--opened');
+      } else {
+        navToggle.classList.add('page-header__toggle--closed');
+        navToggle.classList.remove('page-header__toggle--opened');
+      }
+      if (navHeader.classList.contains('page-header--closed')) {
+        navHeader.classList.remove('page-header--closed');
+        navHeader.classList.add('page-header--opened');
+      } else {
+        navHeader.classList.add('page-header--closed');
+        navHeader.classList.remove('page-header--opened');
       }
     });
 
