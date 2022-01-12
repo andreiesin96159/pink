@@ -50,9 +50,18 @@
       <div class="stats__wrapper">
         <header class="stats__header">
           <div class="stats__background">
-            <h1 class="stats__title container">Взгляните на жизнь <br>иначе!</h1>
+            <h1 class="stats__title stats__title--mobile container">Взгляните на жизнь <br>иначе!</h1>
+            <div class="stats__img">
+              <img src="../img/img/phone-arm.png" alt="" class="stats__phone mobile-phone ">
+              <img src="../img/img/screen-arm.png" alt="" class="stats__screens mobile-screens">
+              <img src="../img/img/phone-arm-desc.png" alt="" class="stats__phone desctop-phone">
+              <img src="../img/img/screen-arm-desc.png" alt="" class="stats__screens desctop-screens">
+            </div>
           </div>
           <div class="stats__block container">
+            <h1 class="stats__title stats__title--tablet">Взгляните<br>
+              на жизнь<br>
+              иначе!</h1>
             <button class="stats__button">Скачать приложение</button>
             <ul class="stats__list">
               <li class="stats__item">
@@ -216,36 +225,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.page-header__toggle');
-    var navHeader = document.querySelector('.page-header');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-      } else {
-        navMain.classList.add('main-nav--closed');
-      }
-      if (navToggle.classList.contains('page-header__toggle--closed')) {
-        navToggle.classList.remove('page-header__toggle--closed');
-        navToggle.classList.add('page-header__toggle--opened');
-      } else {
-        navToggle.classList.add('page-header__toggle--closed');
-        navToggle.classList.remove('page-header__toggle--opened');
-      }
-      if (navHeader.classList.contains('page-header--closed')) {
-        navHeader.classList.remove('page-header--closed');
-        navHeader.classList.add('page-header--opened');
-      } else {
-        navHeader.classList.add('page-header--closed');
-        navHeader.classList.remove('page-header--opened');
-      }
-    });
-
-  </script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

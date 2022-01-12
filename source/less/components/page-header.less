@@ -1,14 +1,20 @@
 .page-header {
   position: absolute;
-  background: rgba(0, 0, 0, 0.3);
   padding-top: 20px;
   width: 100%;
+  background: #283645;
+  opacity: 1;
+  z-index: 1;
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-evenly;
     background: rgba(0, 0, 0, 0.3);
   }
+}
+
+.page-header--closed {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .toggle {
@@ -78,10 +84,6 @@
   }
 }
 
-.page-header--opened {
-  background-color: #283645;
-  opacity: 1;
-}
 
 .page-header__logo {
   padding-left: 20px;
