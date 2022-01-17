@@ -77,9 +77,12 @@
     display: grid;
     grid-template-columns: repeat(2, 300px);
   }
+
   @media (min-width: @desktop-width) {
     padding-top: 80px;
     padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
   }
 }
 
@@ -99,10 +102,25 @@
       left: 252px;
       bottom: 90px;
     }
-    .timer{
+
+    .timer {
       position: absolute;
       top: -11px;
       left: 187px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .diagram {
+      position: absolute;
+      left: 208px;
+      bottom: -65px;
+    }
+
+    .number-24 {
+      position: absolute;
+      left: 264px;
+      bottom: 26px;
     }
   }
 }
@@ -126,16 +144,37 @@
   font-size: 14px;
   line-height: 24px;
   text-decoration-line: underline;
-  color: #D22856;
+  color: #d22856;
 }
-.reviews__block-time{
+
+.reviews__block-time {
   text-align: start;
 }
 
-.reviews__background
-{
+.reviews__background {
   @media (min-width: @desktop-width) {
     background: url("../img/img/background-gray-time.png");
+  }
+}
 
+.reviews__br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reviews-desctop {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.reviews-mobile {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
