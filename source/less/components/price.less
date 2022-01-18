@@ -3,12 +3,14 @@
 .price {
   background: url("../img/img/grey-background.png") no-repeat;
   background-size: 100%;
+  display: revert;
 
   @media (max-width: @tablet-width) {
     text-align: center;
 
     .price__table {
-      margin: 0 auto;
+      margin-top: -15.63em;
+      margin-left: -16.63em;
     }
   }
 
@@ -23,17 +25,28 @@
   }
 }
 
+.price__tbody {
+  @media (min-width: @mobile-width) {
+    display: flex;
+  }
+}
+
 .price__list {
-  background: @text-color;
-  border: 2px solid @text-color;
   border-radius: 1px;
 
-  .price__title {
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 30px;
-    border: 2px solid #f2f2f2;
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    .price__title {
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 30px;
+      border: 1px solid #f2f2f2;
+      background-color: #283645;
+    }
   }
 }
 
