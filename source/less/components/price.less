@@ -8,19 +8,21 @@
   @media (max-width: @tablet-width) {
     text-align: center;
 
-    .price__table {
-      margin-top: -15.63em;
-      margin-left: -16.63em;
-    }
   }
 
   @media (min-width: @tablet-width) {
-    .price__toggles {
-      display: none;
-    }
+
     .price__table {
       margin: 0 auto;
     }
+  }
+}
+
+.price__wrapper {
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -28,6 +30,8 @@
   @media (min-width: @mobile-width) {
     display: flex;
   }
+
+  @media (min-width: @tablet-width) {}
 }
 
 .price__list {
@@ -37,6 +41,7 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    transition: all 0.6s ease;
 
     .price__title {
       font-weight: 700;
@@ -46,6 +51,14 @@
       border: 1px solid #f2f2f2;
       background-color: #283645;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 233px;
   }
 }
 
@@ -62,4 +75,76 @@
   background: #ffffff;
   border: 2px solid @white-color;
   border-radius: 1px;
+
+  @media (min-width: @mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    height: 59px;
+  }
+}
+
+.price__name--desctop {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: -1;
+    padding-top: 65px;
+  }
+}
+
+.price__span {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+}
+
+.price__text {
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+  }
+}
+
+.price__img {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    height: 21px;
+    width: 31px;
+    padding-top: 15px;
+  }
+}
+
+.price__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.slider__first:checked~.first {
+  margin-left: -20%;
+}
+
+.slider__second:checked~.first {
+  margin-left: 0;
+}
+
+.slider__third:checked~.first {
+  margin-left: -40%;
 }

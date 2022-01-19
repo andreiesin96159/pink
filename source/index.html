@@ -174,58 +174,46 @@
         </p>
       </div>
     </section>
+
     <section class="price">
       <div class="price__wrapper slider">
 
         <table class="price__table">
-          <tbody class="price__tbody">
+          <tbody class="price__tbody first">
             <tr class="price__list">
               <th class="price__title">База <br> <span class="price__number">1,99 USD</span></th>
-
-              <td class="price__description">Розовый фильтр</td>
-
-              <td class="price__description">Смайлики</td>
-
-
-              <td class="price__description">Комментарии</td>
+              <td class="price__description price__description--mobile"><span class="price__span">Розовый фильтр</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Смайлики</span><img src="../img/img/no.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Комментарии</span><img src="../img/img/no.png" class="price__img"></td>
             </tr>
             <tr class="price__list">
               <th class="price__title">Стандарт <br> <span class="price__number">3,99 USD</span></th>
-
-              <td class="price__description">Розовый фильтр</td>
-
-              <td class="price__description">Смайлики</td>
-
-              <td class="price__description">Комментарии</td>
+              <td class="price__description price__description--mobile"><span class="price__span">Розовый фильтр</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Смайлики</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Комментарии</span><img src="../img/img/no.png" class="price__img"></td>
             </tr>
-
             <tr class="price__list">
               <th class="price__title">Анлим<br> <span class="price__number">9,99 USD</span> </th>
-
-              <td class="price__description">Розовый фильтр</td>
-
-
-              <td class="price__description">Смайлики</td>
-
-              <td class="price__description">Комментарии</td>
+              <td class="price__description price__description--mobile"><span class="price__span">Розовый фильтр</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Смайлики</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Комментарии</span><img src="../img/img/yes.png" class="price__img"></td>
             </tr>
             </tr>
-            <!-- <tr class="price__name">
-            <td class="price__description">Розовый фильтр</td>
+            <tr class="price__name price__name--desctop">
+            <td class="price__description"><span class="price__text">Розовый фильтр</td>
+            <td class="price__description"><span class="price__text">Смайлики</td>
+            <td class="price__description"><span class="price__text">Комментарии</td>
           </tr>
-          <tr class="price__name">
-            <td class="price__description">Смайлики</td>
-          </tr>
-          <tr class="price__name">
-            <td class="price__description">Комментарии</td>
-          </tr> -->
           <tbody>
         </table>
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="price__toggles slider__toggles">
+          <input type="radio" name="radio-btn"  class="slider__toggle slider__first">
+          <label for="slider__first" class="price__navigation-btn"></label>
+          <input type="radio" name="radio-btn"  class="slider__toggle slider__second" >
+          <label for="slider__second" class="price__navigation-btn"></label>
+          <input type="radio" name="radio-btn"  class="slider__toggle slider__third" >
+          <label for="slider__third" class="price__navigation-btn"></label>
+        </div>
       </div>
     </section>
 
