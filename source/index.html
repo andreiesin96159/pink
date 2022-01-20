@@ -9,49 +9,59 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <div class="container">
+  <header class="page-header page-header--closed">
+    <div class="page-header__block">
       <a class="page-header__logo">
         <img src="../img/svg/pink.svg" alt="logo-image" class="page__logo page__logo--mobile">
         <img src="../img/svg/logotype-white-tablet.svg" alt="logo-image" class="page__logo page__logo--desktop">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html" class="site-list__link">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <button class="page-header__toggle page-header__toggle--closed toggle" type="button"><span
+          class="toggle__span"></span></button>
     </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <section class="stats">
       <div class="stats__wrapper">
         <header class="stats__header">
           <div class="stats__background">
-            <h1 class="stats__title container">Взгляните на жизнь <br>иначе!</h1>
+            <h1 class="stats__title stats__title--mobile container">Взгляните на жизнь <br>иначе!</h1>
+            <div class="stats__img">
+              <img src="../img/img/phone-arm.png" alt="" class="stats__phone mobile-phone ">
+              <img src="../img/img/screen-arm.png" alt="" class="stats__screens mobile-screens">
+              <img src="../img/img/phone-arm-desc.png" alt="" class="stats__phone desctop-phone">
+              <img src="../img/img/screen-arm-desc.png" alt="" class="stats__screens desctop-screens">
+            </div>
           </div>
           <div class="stats__block container">
+            <h1 class="stats__title stats__title--tablet">Взгляните<br>
+              на жизнь<br>
+              иначе!</h1>
             <button class="stats__button">Скачать приложение</button>
             <ul class="stats__list">
               <li class="stats__item">
@@ -78,30 +88,65 @@
         <h3 class="advantages__title3">Устали от серости <br class="advantages__space--none">мегаполиса?</h3>
         <h3 class="advantages__title3">Нам есть, что вам <br class="advantages__space">предложить!</h3>
       </div>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <img src="../img/img/iphone-screen-1.png" alt="Phone" class="advantages__img">
-          <h4 class="advantages__title4">Поднимает настроение</h4>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-            несколько кликов!</p>
-        </li>
-        <li class="advantages__item">
-          <img src="../img/img/iphone-screen-2.png" alt="Phone" class="advantages__img">
-          <h4 class="advantages__title4">Меняет мир вокруг</h4>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-            усилить эффект</p>
-        </li>
-        <li class="advantages__item">
-          <img src="../img/img/iphone-screen-3.png" alt="Phone" class="advantages__img advantages__img--last">
-          <h4 class="advantages__title4">Заводит новых друзей</h4>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
-        </li>
-      </ul>
+      <div class="advantages__div">
+        <ul class="advantages__list container">
+          <li class="advantages__item">
+            <img src="../img/img/iphone.png" alt="" class="advantages__img" width="157px" height="320px">
+            <img src="../img/img/iphone-screen-1.png" alt="Phone" class="advantages__img img-desctop" width="136px"
+              height="246px">
+            <h4 class="advantages__title4">Поднимает настроение</h4>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <img src="../img/img/iphone.png" alt="" class="advantages__img" width="157px" height="320px">
+            <img src="../img/img/iphone-screen-2.png" alt="Phone" class="advantages__img img-desctop" width="136px"
+              height="246px">
+            <h4 class="advantages__title4">Меняет мир вокруг</h4>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="advantages__item advantages-desctop">
+            <img src="../img/img/iphone-des.png" alt="" class="advantages__img advantages__img--desctop" width="268px"
+              height="547px">
+            <img src="../img/img/screen-des.png" alt="" class="advantages__img advantages__screen--desctop"
+              width="237px" height="420px">
+          </li>
+          <li class="advantages__item">
+            <img src="../img/img/iphone.png" alt="" class="advantages__img advantages__img--mobile" width="157px"
+              height="320px">
+            <img src="../img/img/iphone-screen-3.png" alt="Phone" class="advantages__img advantages__img--last pictures"
+              width="136px" height="246px">
+            <h4 class="advantages__title4">Заводит новых друзей</h4>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+        </ul>
+      </div>
 
     </section>
 
     <section class="reviews">
+      <div class="reviews__background">
+        <div class="reviews__time container">
+          <div class="reviews__clock">
+            <img src="../img/img/timer.png" alt="" class="reviews__img timer reviews-mobile">
+            <img src="../img/img/diagram-fill.png" alt="" class="reviews__img diagram reviews-mobile">
+            <img src="../img/img/number_24.png" alt="" class="reviews__img number-24 reviews-mobile">
+            <img src="../img/img/timer-des.png" alt="" class="reviews__img timer reviews-desctop">
+            <img src="../img/img/diagram-des.png" alt="" class="reviews__img diagram reviews-desctop">
+            <img src="../img/img/des-24.png" alt="" class="reviews__img number-24 reviews-desctop">
+          </div>
+          <div class="reviews__block-time">
+            <p class="reviews__description-time affect">Эффект <br>
+              на 24 часа!</p>
+            <p class="reviews__description-time british">Британские ученые провели исследования<br class="reviews__br">
+              и доказали, что положительный эффект<br class="reviews__br">
+              от использования приложения длится целые сутки!</p>
+            <a href="" class="reviews__link-time link-time">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
       <div class="reviews__wrapper slider container">
         <ul class="reviews__list">
           <li class="reviews__item">
@@ -131,29 +176,44 @@
     </section>
 
     <section class="price">
-      <div class="price__wrapper slider container">
+      <div class="price__wrapper slider">
 
         <table class="price__table">
-          <tr class="price__list">
-            <th class="price__title">База <br> <span class="price__number">1,99 USD</span></th>
-            <th class="price__title">Стандарт <br> <span class="price__number">3,99 USD</span></th>
-            <th class="price__title">Анлим<br> <span class="price__number">9,99 USD</span> </th>
+          <tbody class="price__tbody first">
+            <tr class="price__list">
+              <th class="price__title">База <br> <span class="price__number">1,99 USD</span></th>
+              <td class="price__description price__description--mobile"><span class="price__span">Розовый фильтр</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Смайлики</span><img src="../img/img/no.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Комментарии</span><img src="../img/img/no.png" class="price__img"></td>
+            </tr>
+            <tr class="price__list">
+              <th class="price__title">Стандарт <br> <span class="price__number">3,99 USD</span></th>
+              <td class="price__description price__description--mobile"><span class="price__span">Розовый фильтр</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Смайлики</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Комментарии</span><img src="../img/img/no.png" class="price__img"></td>
+            </tr>
+            <tr class="price__list">
+              <th class="price__title">Анлим<br> <span class="price__number">9,99 USD</span> </th>
+              <td class="price__description price__description--mobile"><span class="price__span">Розовый фильтр</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Смайлики</span><img src="../img/img/yes.png" class="price__img"></td>
+              <td class="price__description price__description--mobile"><span class="price__span">Комментарии</span><img src="../img/img/yes.png" class="price__img"></td>
+            </tr>
+            </tr>
+            <tr class="price__name price__name--desctop">
+            <td class="price__description"><span class="price__text">Розовый фильтр</td>
+            <td class="price__description"><span class="price__text">Смайлики</td>
+            <td class="price__description"><span class="price__text">Комментарии</td>
           </tr>
-          <tr class="price__name">
-            <td class="price__description">Розовый фильтр</td>
-          </tr>
-          <tr class="price__name">
-            <td class="price__description">Смайлики</td>
-          </tr>
-          <tr class="price__name">
-            <td class="price__description">Комментарии</td>
-          </tr>
+          <tbody>
         </table>
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="price__toggles slider__toggles">
+          <input type="radio" name="radio-btn"  class="slider__toggle slider__first">
+          <label for="slider__first" class="price__navigation-btn"></label>
+          <input type="radio" name="radio-btn"  class="slider__toggle slider__second" >
+          <label for="slider__second" class="price__navigation-btn"></label>
+          <input type="radio" name="radio-btn"  class="slider__toggle slider__third" >
+          <label for="slider__third" class="price__navigation-btn"></label>
+        </div>
       </div>
     </section>
 
@@ -174,7 +234,11 @@
             <a href="#" class="question__link">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <img src="../img/img/map.png" alt="map" class="question__img">
+      </div>
+      <div class="question__map">
+        <img src="../img/img/map.png" alt="map" class="question__img map">
+        <img src="../img/img/map2.png" alt="map" class="question__img map2">
+        <img src="../img/img/map3.png" alt="map" class="question__img map3">
       </div>
     </section>
 
@@ -211,6 +275,7 @@
     </div>
   </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
