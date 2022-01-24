@@ -39,6 +39,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .form__div {
@@ -60,6 +64,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    order: 1;
   }
 
   @media (min-width: @desktop-width) {

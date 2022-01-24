@@ -5,8 +5,25 @@
   color: @text-color;
 }
 
+.benefits-form {
+  @media (min-width: @mobile-width) {
+    position: relative;
+    top: -90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: -70px;
+  }
+}
+
 .benefits-form__title {
   text-align: center;
+
+  @media (min-width: @mobile-width) {
+    background: url("../img/img/white.png") no-repeat;
+    background-size: 100%;
+  }
 
   .form-title__br2 {
     display: none;
