@@ -42,11 +42,20 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+
+    .form__fieldset {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .form__div {
-  margin-top: 50px;
   text-align: center;
 
   .benefits-form__for-fill {
