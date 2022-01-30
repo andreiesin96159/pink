@@ -175,6 +175,40 @@
   width: 100%;
   position: relative;
   top: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photo__img-post2 {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    position: relative;
+    top: 18px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.photo__img-post3 {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 18px;
+  }
 }
 
 .photo-post__block {

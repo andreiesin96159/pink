@@ -64,10 +64,20 @@
         пользователи!
         <br class="photo__title see-title"> Видите, как не хватает ваших?
       </h2>
-      <img src="../img/img/panorama-tablet.png" alt="bridge" class="photo__img photo__img-post">
+      <picture class="photo__picture-main">
+        <source media="(min-width: 320px)" srcset="../img/img/panorama-tablet.png">
+        <img src="../img/img/panorama-tablet.png" alt="bridge" class="photo__img photo__img-post">
+      </picture>
+      <picture class="photo__picture-main">
+        <source media="(min-width: 660px)" srcset="../img/img/panorama-tablet2.png">
+      <img src="../img/img/panorama-tablet2.png" alt="bridge" class="photo__img photo__img-post2">
+    </picture>
+    <picture class="photo__picture-main">
+      <source media="(min-width: 1200px)" srcset="../img/img/panorama-desktop3.png">
+      <img src="../img/img/panorama-desktop3.png" alt="bridge" class="photo__img photo__img-post3">
+    </picture>
       <ul class="photo__list container">
         <li class="photo__item photo-post photo-post--best">
-
           <p class="photo-post__name post-mobile">Анна <span class="photo-post__time">(5 минут назад)</span></p>
           <p class="photo-post__description">Прыгать или нет? Напишите в
             комментарии свой совет и
@@ -81,7 +91,10 @@
           </div>
         </li>
         <li class="photo__item photo-post">
+        <picture class="photo__picture-user">
+          <source media="(min-width: 660px)" srcset="../img/img/photo-1-mobile.png">
           <img src="../img/img/photo-1-mobile.png" alt="car" class="photo__img">
+        </picture>
           <p class="photo-post__name">Левон <span class="photo-post__time">(5 часов назад)</span></p>
           <p class="photo-post__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
@@ -89,7 +102,10 @@
           </div>
         </li>
         <li class="photo__item photo-post">
+          <picture class="photo__picture-user">
+            <source media="(min-width: 660px)" srcset="../img/img/photo-2-mobile.png">
           <img src="../img/img/photo-2-mobile.png" alt="music" class="photo__img">
+        </picture>
           <p class="photo-post__name">Антон <span class="photo-post__time">(12 часов назад)</span></p>
           <p class="photo-post__description">Соседи будут рады!</p>
           <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
@@ -97,7 +113,10 @@
           </div>
         </li>
         <li class="photo__item photo-post">
+          <picture class="photo__picture-user">
+            <source media="(min-width: 660px)" srcset="../img/img/photo-3-tablet.png">
           <img src="../img/img/photo-3-tablet.png" alt="glasses" class="photo__img">
+          </picture>
           <p class="photo-post__name">Борис <span class="photo-post__time">(20 часов назад)</span></p>
           <p class="photo-post__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
@@ -105,7 +124,10 @@
           </div>
         </li>
         <li class="photo__item photo-post">
+          <picture class="photo__picture-user">
+            <source media="(min-width: 660px)" srcset="../img/img/photo-4-tablet.png">
           <img src="../img/img/photo-4-tablet.png" alt="bahcha" class="photo__img">
+          </picture>
           <p class="photo-post__name">Сергей <span class="photo-post__time">(25 часов назад)</span></p>
           <p class="photo-post__description">Самая кубанская в мире!</p>
           <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
@@ -113,7 +135,10 @@
           </div>
         </li>
         <li class="photo__item photo-post">
+          <picture class="photo__picture-user">
+            <source media="(min-width: 660px)" srcset="../img/img/photo-5-tablet.png">
           <img src="../img/img/photo-5-tablet.png" alt="leg" class="photo__img">
+        </picture>
           <p class="photo-post__name">Максим <span class="photo-post__time">(40 часов назад)</span></p>
           <p class="photo-post__description">Где снег-то?</p>
           <div class="photo-post__like like"><img src="../img/svg/heart.svg" alt="like">
@@ -121,7 +146,10 @@
           </div>
         </li>
         <li class="photo__item photo-post">
+          <picture class="photo__picture-user">
+            <source media="(min-width: 660px)" srcset="../img/img/photo-6-tablet.png">
           <img src="../img/img/photo-6-tablet.png" alt="flight" class="photo__img">
+          </picture>
           <p class="photo-post__name">Надежда <span class="photo-post__time">(45 часов назад)</span></p>
           <p class="photo-post__description">Всем GM и взаимные лайки!</p>
           <div class="photo-post__like like">
