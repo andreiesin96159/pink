@@ -40,3 +40,17 @@
 .page-footer__list {
   display: flex;
 }
+
+.page-footer__img{
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+.page-footer__img--desktop{
+  @media (max-width: @desktop-width) {
+    display: none;
+  }
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

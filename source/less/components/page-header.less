@@ -87,15 +87,27 @@
 
 .page-header__logo {
   padding-left: 20px;
-
+  fill: #ffffff;
   .page__logo--mobile {
     @media (min-width: @tablet-width) {
       display: none;
     }
   }
 
-  .page__logo--desktop {
+  .page__logo--tablet {
     @media (max-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  .page__logo--desktop {
+    @media (max-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  .page__logo--tablet {
+    @media (min-width: @desktop-width) {
       display: none;
     }
   }

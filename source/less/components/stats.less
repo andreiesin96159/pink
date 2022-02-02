@@ -150,60 +150,85 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-.mobile-phone {
   @media (min-width: @mobile-width) {
+    background: url("../img/img/phone-arm.png") no-repeat;
+    height: 286px;
     position: relative;
     left: 0;
-    bottom: -3px;
+    bottom: -23px;
+    background-position: center;
   }
-
   @media (min-width: @tablet-width) {
-    display: none;
+    background: url("../img/img/phone-arm-desc.png") no-repeat;
+    height: 550px;
+    position: relative;
+    left: 34px;
+    bottom: -186px;
   }
-}
-
-.mobile-screens {
-  @media (min-width: @mobile-width) {
-    position: absolute;
-    bottom: 60px;
-    left: 104px;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.desctop-screens,
-.desctop-phone {
-  @media (min-width: @mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-
   @media (min-width: @desktop-width) {
-    left: 486px;
+    background: url("../img/img/phone-arm-desc.png") no-repeat;
+    height: 550px;
+    position: relative;
+    left: 400px;
+    bottom: -185px;
   }
 }
-
-.desctop-screens {
+.stats__screen
+{
+  @media (min-width: @mobile-width) {
+    background: url("../img/img/screen-arm.png") no-repeat;
+    height: 197px;
+    position: relative;
+    bottom: -32px;
+    left: 0;
+    background-position: center;
+  }
   @media (min-width: @tablet-width) {
-    position: absolute;
-    bottom: 145px;
+    background: url("../img/img/screen-arm-desc.png") no-repeat;
+    height: 550px;
+    position: relative;
     left: 371px;
+    bottom: -54px;
   }
-
   @media (min-width: @desktop-width) {
-    left: 857px;
+    background: url("../img/img/screen-arm-desc.png") no-repeat;
+    height: 550px;
+    position: relative;
+    left: 371px;
+    bottom: -54px;
   }
 }
+
+
+
+// .desctop-screens,
+// .desctop-phone {
+//   @media (min-width: @mobile-width) {
+//     display: none;
+//   }
+
+//   @media (min-width: @tablet-width) {
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     left: 486px;
+//   }
+// }
+
+// .desctop-screens {
+//   @media (min-width: @tablet-width) {
+//     position: absolute;
+//     bottom: 145px;
+//     left: 371px;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     left: 857px;
+//   }
+// }
 
 .main-title {
   @media (min-width: @mobile-width) {
